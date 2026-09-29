@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+h1 {
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.score {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#gameArea {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(#020617, #000000);
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px;
+}
+
+.asteroid {
+    position: absolute;
+    font-size: 35px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: 2px solid white;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+#gameOver {
+    display: none;
+    margin-top: 20px;
+}
+
+#gameOver h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
